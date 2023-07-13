@@ -1,0 +1,12 @@
+
+1. File extension : .py
+2. Some points to remember : 
+    - Python is case sensetive. So, print and Print are different
+    - No need of semicolon in Python
+    - As curly braces {}, are not used in python, the indentation is necessary, means proper spaces in outer and inner loop
+    - 
+
+
+3. Features : 
+    - There is no need to define the type of variable in Python, just enter the vale, type will be assigned to it
+    - 

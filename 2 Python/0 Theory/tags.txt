@@ -1,0 +1,6 @@
+
+1. input() : To take input from user, but it take every data as string, so convert using int(variable_name) to convert into integer; float(), bool(), str()
+    name = input("what is your name")       # we can also include msg within the input
+    print("Hello " + name)                  # will print hello along with name variable
+
+2. 

@@ -1,4 +1,5 @@
 
 Some imp points about C++
 
-1.
+1.File extension : .cpp
+2. 
