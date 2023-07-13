@@ -10,6 +10,7 @@ Welcome to the Data Structures and Algorithms repository! Here, you'll find effi
 
 - C++: The C++ implementations can be found in the `cpp` directory.
 - Python: The Python implementations are located in the `python` directory.
+- Java: The Python implementations are located in the `java` directory.
 
 ## Contents
 
