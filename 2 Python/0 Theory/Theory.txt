@@ -1,4 +1,10 @@
 
+0. Libraries in Python :
+    - Numpy : For numerical Computation
+    - Pandas : Analyzing tableau data using panda
+    - Matplotlib & Seaborn : Data Visualization with these 2 
+    -
+
 1. File extension : .py
 2. Some points to remember : 
     - Python is case sensetive. So, print and Print are different
