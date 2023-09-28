@@ -1,8 +1,8 @@
 
 0. Libraries in Python :
-    - Numpy : For numerical Computation
-    - Pandas : Analyzing tableau data using panda
-    - Matplotlib & Seaborn : Data Visualization with these 2 
+    - NumPy : For numerical (mathematical & statistical) Computation
+    - Pandas : Analyzing tabular data
+    - Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs, maps etc)
     -
 
 1. File extension : .py
