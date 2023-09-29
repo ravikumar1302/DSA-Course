@@ -3,7 +3,11 @@
     - NumPy : For numerical (mathematical & statistical) Computation
     - Pandas : Analyzing tabular data
     - Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs, maps etc)
-    -
+    
+    - Pyhton Comments : 
+                Single line = # text 
+                Multiple line = """ text """
+    - Case-Sensitivity in Python : Sensative (All are in Lowercase except - True, False and None)
 
 1. File extension : .py
 2. Some points to remember : 
@@ -15,4 +19,5 @@
 
 3. Features : 
     - There is no need to define the type of variable in Python, just enter the vale, type will be assigned to it
+    - So, no need to define short int, long int etc. Directly write a=243543535... etc, unlike C/C++/Java
     - 

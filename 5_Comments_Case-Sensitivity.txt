@@ -1,0 +1,63 @@
+
+
+Comment in different Tech Stacks :
+
+1. Programming Languages :
+    a) C++ : 
+        Single line = // text 
+        Multiple line = /* text */
+    
+    b) JAVA :
+    c) Pyhton : 
+            Single line = # text 
+            Multiple line = """ text """
+    d) JS : 
+
+2. Front-End
+    a) HTML : <!-- text -->
+    b) CSS : /* text */
+    c) JS : //
+
+3. Database
+    a) SQL, PL-SQL : 
+        Single line = -- text
+        Multiple line =   /* text */
+    b) 
+
+4. Back-End
+    a) 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Case-Sensitivity in different Tech Stacks :
+
+1. Programming Languages :
+    a) C++ : Sensative (written in Lower-case mostly)
+    b) JAVA : Sensative (keyword are in Lowercase only, but - see exception point 2)
+    c) Python : Sensative (All are in Lowercase except - True, False and None)
+    d) JS : 
+
+2. Front-End
+    a) HTML : In-sensitive
+        X-HTML : Sensitive
+    b) CSS : Sensitive & In-sensitive Both (see below in Exception point 1)
+    c) JS : Sensative
+
+3. Database
+    a) SQL, PL-SQL : In-sensitive (but write in Upper-case)
+    b) 
+
+4. Back-End
+    a) 
+
+
+Exceptions :
+    1. CSS selectors are generally case-insensitive, this includes class and ID selectors. So, CSS properties, values, pseudo class names, pseudo element names, element names are case INsensitive. 
+        - But HTML class names are case-sensitive. And CSS class, id , urls, font-families are case sensitive
+
+    2. By convention, Java programs are written entirely in lower-case characters with three exceptions :
+        - The first letter of class names are capitalized to distinguish class names from member names.
+        - The names of constant fields are written entirely capital letters. e.g., the built-in Java class Integer includes the constant static fields MIN_VALUE and MAX_VALUE.
+        - The first letter in each word in a compound identifier after the first are capitalized. e.g., the built-in Java class Object includes a method called toString(). The capital S signifies the beginning of a word within the compound name toString().
+    
+    3. 
