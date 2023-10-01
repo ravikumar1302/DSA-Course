@@ -1,4 +1,6 @@
 print("Hello")
 
+today="saturday"
 
-c=print(True +False)
+print('day' in today)
+print("End")
