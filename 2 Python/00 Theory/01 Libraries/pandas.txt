@@ -1,0 +1,13 @@
+
+Pandas : Analyzing tabular data
+
+1. Common functions : 
+    Reading CSV files : It reads files in a tabular manner : xyx_df = pd.read_csv('file_name.csv.')
+    - pd.read_csv : Read data from a CSV file into a Pandas DataFrame object
+    - .info() : View basic information about rows, columns and data types
+    - .describe() : View statistical information about numeric columns
+    - .columns : Get the list of column names
+    - .shape : Get the number of rows & columns as a tuple
+    -  
+
+2. 

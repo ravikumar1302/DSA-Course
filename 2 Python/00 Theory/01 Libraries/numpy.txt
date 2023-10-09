@@ -1,0 +1,10 @@
+
+NumPy : For numerical (mathematical & statistical) Computation
+
+1. Common functions : 
+    - Mathematics : np.sum, np.exp, np.round, etc arithmetic operators
+    - Array Manipulation : np.reshape, np.stack, np.concatenate, np.split
+    - Linear Algebra : np.matmul, np.dot, np.transpose, np.eigvals
+    - Statistics : np.mean, np.median, np.std, np.max
+
+2. 
