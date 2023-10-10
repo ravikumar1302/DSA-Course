@@ -23,7 +23,14 @@
     - Boleans are treated as integer in expression. e.g. c=print(True +True) = 2
     - Divsion operator (/) always return float value even 4/2 type will also be float
 
-4. string
+4. Data Types in Python : By default Python have these data types:
+        strings - used to represent text data, the text is given under quote marks. e.g. "ABCD"
+        integer - used to represent integer numbers. e.g. -1, -2, -3
+        float - used to represent real numbers. e.g. 1.2, 42.42
+        boolean - used to represent True or False.
+        complex - used to represent complex numbers. e.g. 1.0 + 2.0j, 1.5 + 2.5j
+        
+5. string
     - Should be enclosed in single(' ') or double(" ") quotes
     - You can use single quote inside double quote, but opposite will create an issue
     - Else you can use escape character(\) like " his son\'s name is " to print his son's name is
