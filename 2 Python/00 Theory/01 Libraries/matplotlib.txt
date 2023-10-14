@@ -177,6 +177,48 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
 
 8. hist() : to create histograms
     - A histogram is a graph showing frequency distributions. It is a graph showing the number of observations within each given interval.
-    - 
+    - plt.hist(x)
+        plt.show() 
 
-9. : To create Pie-Charts
+9. pie() : To create Pie-Charts
+    - y = np.array([35, 25, 25, 15])
+        plt.pie(y)
+        plt.show() 
+
+    - By default the plotting of the first wedge starts from the x-axis and moves counterclockwise
+    
+    - label : 
+        - y = np.array([35, 25, 25, 15])
+            mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+
+            plt.pie(y, labels = mylabels)
+            plt.show()
+    
+    - startangle :
+        - plt.pie(y, labels = mylabels, startangle = 90)
+    
+    - explode : one of the wedges to stand out
+        - y = np.array([35, 25, 25, 15])
+            mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+            myexplode = [0.2, 0, 0, 0]
+
+            plt.pie(y, labels = mylabels, explode = myexplode)
+            plt.show() 
+
+    - shadow : 
+        plt.pie(y, labels = mylabels, explode = myexplode, shadow = True)
+    
+    - colors : 
+        mycolors = ["black", "hotpink", "b", "#4CAF50"]
+        plt.pie(y, labels = mylabels, colors = mycolors)
+    
+    - legend() : 
+        plt.pie(y, labels = mylabels)
+        plt.legend()
+        plt.show() 
+
+        - title : 
+            To add a header to the legend, add the title parameter to the legend function.
+            plt.legend(title = "Four Fruits:")
+    
+    - 
