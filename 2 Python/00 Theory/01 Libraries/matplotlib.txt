@@ -26,7 +26,7 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
     - If we do not specify the points on the x-axis, they will get the default values 0, 1, 2, 3 etc., depending on the length of the y-points.
     
     - marker : 
-        - fmt = marker|line|color
+        - fmt = marker|line|color : shorthand for specifying linestyle, marker and color
             plt.plot(ypoints, 'o:r')
         - markersize or ms : plt.plot(ypoints, marker = 'o', ms = 20)
         - markeredgecolor or mec : plt.plot(ypoints, marker = 'o', ms = 20, mec = 'r')
