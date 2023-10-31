@@ -3,6 +3,16 @@ Matplotlib is a low level graph plotting library in python that serves as a visu
 Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs, maps etc)
     - Matplotlib is mostly written in python, a few segments are written in C, Objective-C and Javascript for Platform compatibility.
 
+- Plotly Express: 
+    Plotly Express is a part of the Plotly library and is used for creating interactive, high-level visualizations. 
+    It provides a simplified and expressive interface for creating a wide range of charts and graphs. 
+    Plotly is known for its interactive and web-based plotting capabilities.
+
+- Matplotlib: 
+    Matplotlib is a separate, popular data visualization library in Python. 
+    It is a lower-level library that offers more fine-grained control over plot customization. 
+    While Matplotlib can be used to create static plots, it can also be embedded in Jupyter Notebooks for interactive use.
+
 1. pyplot : Most of the Matplotlib utilities lies under the pyplot submodule
     import matplotlib.pyplot as plt
 
