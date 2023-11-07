@@ -8,19 +8,22 @@ You must solve the problem without modifying the array nums and uses only consta
 Constraint : All the integers in nums appear only once except for precisely one integer which appears two or more times.
 */
 
-class Solution {
+class Solution
+{
 public:
-    int findDuplicate(vector<int>& nums) {
-        
+    int findDuplicate(vector<int> &nums)
+    {
+
         int n = nums.size();
-        for(int i=0;i<nums.size();i++)
+        for (int i = 0; i < nums.size(); i++)
         {
-            int x = nums[i]%n;
-            if(nums[x]>n) return nums[i]%n;
-            nums[x]+=n;
+            int x = nums[i] % n;
+            if (nums[x] > n)
+                return nums[i] % n;
+            nums[x] += n;
         }
         return 0;
-}
+    }
 };
 
-//Here bit approach didn't work bcz they played in constraint, the repeated number can be repeated many times. While the bit approach work only for  1 repetition
+// Here bit approach didn't work bcz they played in constraint, the repeated number can be repeated many times. While the bit approach work only for  even no of repetition
