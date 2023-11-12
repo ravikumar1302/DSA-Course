@@ -45,12 +45,12 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
         - both mec and mf : plt.plot(ypoints, marker = 'o', ms = 20, mec = 'r', mfc = 'r')
         - hexadecimal color is also allowed
         
-        - line
-            - linestyle or ls : to change the style of the plotted line : plt.plot(ypoints, linestyle = 'dotted')
-            - color or c : to set the color of the line; plt.plot(ypoints, color = 'r')
-            - linewidth or lw : plt.plot(ypoints, linewidth = '20.5')
+    - line
+        - linestyle or ls : to change the style of the plotted line : plt.plot(ypoints, linestyle = 'dotted')
+        - color or c : to set the color of the line; plt.plot(ypoints, color = 'r')
+        - linewidth or lw : plt.plot(ypoints, linewidth = '20.5')
 
-    - To plot multple lines : 
+    - To plot multple lines on same graph: 
         y1 = np.array([3, 8, 1, 10])
         y2 = np.array([6, 2, 7, 11])
 
@@ -73,7 +73,6 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
     
     - loc : parameter in title() to position the title.
         plt.title("Sports Watch Data", loc = 'left')
-    
 
 4. grid() : to add grid lines to the plot
     -   plt.title("Sports Watch Data")
@@ -86,8 +85,7 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
 
     - axis : use the axis parameter in the grid() function to specify which grid lines to display
         plt.grid(axis = 'x')
-    - set the line properties of the grid, like this: 
-        grid(color = 'color', linestyle = 'linestyle', linewidth = number)
+    - set the line properties of the grid, like this :
         plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
 
 5. subplot() : to draw multiple plots in one figure
@@ -115,11 +113,8 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
         The layout is organized in rows and columns, which are represented by the first and second argument.
         The third argument represents the index of the current plot.
 
-        plt.subplot(1, 2, 1)
-        #the figure has 1 row, 2 columns, and this plot is the first plot.
-
-        plt.subplot(1, 2, 2)
-        #the figure has 1 row, 2 columns, and this plot is the second plot.
+        plt.subplot(1, 2, 1)    # the figure has 1 row, 2 columns, and this plot is the first plot.
+        plt.subplot(1, 2, 2)    # the figure has 1 row, 2 columns, and this plot is the second plot.
 
     - suptitle() : Super title of all the figures
 
@@ -143,7 +138,7 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
         colors = np.array(["red","green","blue","yellow","pink","black","orange","purple","beige","brown","gray","cyan","magenta"])
         plt.scatter(x, y, c=colors)
     
-    - ColorMap : The Matplotlib module has a number of available colormaps. A colormap is like a list of colors, where each color has a value that ranges from 0 to 100.
+    - ColorMap : The Matplotlib module has a number of available color-maps. A colormap is like a list of colors, where each color has a value that ranges from 0 to 100.
         - You can specify the colormap with the keyword argument cmap with the value of the colormap, in this case 'viridis' which is one of the built-in colormaps available in Matplotlib.
             In addition you have to create an array with values (from 0 to 100), one value for each point in the scatter plot:
 
@@ -165,7 +160,7 @@ Matplotlib & Seaborn : Create Data Visualization with these 2 libraries (graphs,
 
             plt.scatter(x, y, s=sizes)
             plt.scatter(x, y, s=sizes, alpha=0.5)
-            plt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='nipy_spectral')       #Combine Color Size and Alpha
+            plt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='nipy_spectral')       # Combine Color Size and Alpha
         
         - alpha : to adjust the transparency of the dots with the alpha argument.
 

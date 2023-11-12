@@ -25,11 +25,11 @@ NumPy : For numerical (mathematical & statistical) Computation
     arr = np.array([1, 2, 3, 4], ndmin=5)
 
 6. Data Types in Python : By default Python have these data types:
-        strings - used to represent text data, the text is given under quote marks. e.g. "ABCD"
-        integer - used to represent integer numbers. e.g. -1, -2, -3
-        float - used to represent real numbers. e.g. 1.2, 42.42
-        boolean - used to represent True or False.
-        complex - used to represent complex numbers. e.g. 1.0 + 2.0j, 1.5 + 2.5j
+        strings - for text data, the text is given under quote marks. e.g. "ABCD"
+        integer - integer numbers. e.g. -1, -2, -3, 0, 1
+        float - for real numbers. e.g. 1.2, 42.42
+        boolean - for True or False.
+        complex - for complex numbers. e.g. 1.0 + 2.0j, 1.5 + 2.5j
 
     Data Types in NumPy : NumPy has some extra data types, and refer to data types with one character, like i for integers, u for unsigned integers etc.
         i - integer
@@ -44,7 +44,7 @@ NumPy : For numerical (mathematical & statistical) Computation
         U - unicode string
         V - fixed chunk of memory for other type ( void )
 
-    - dtype : it dtype that returns the data type of the array
+    - dtype : dtype that returns the data type of the array
         e.g. arr = np.array([1, 2, 3, 4])
              print(arr.dtype)
     - Creating Arrays With a Defined Data Type : 
@@ -83,8 +83,8 @@ NumPy : For numerical (mathematical & statistical) Computation
             x = arr.copy()
             y = arr.view()
 
-            print(x.base)
-            print(y.base)
+            print(x.base)   # none
+            print(y.base)   # arr
 
 8. shape : It returns a tuple with each index having the number of corresponding elements.
     reshape : It changes the shape of an array.
@@ -147,12 +147,12 @@ NumPy : For numerical (mathematical & statistical) Computation
         arr = np.concatenate((arr1, arr2), axis=1)
         print(arr)
 
-        #output : 
+        # output : 
         [[1 2 5 6]
         [3 4 7 8]]
 
     - stack() : 
-        - Stacking is same as concatenation, the only difference is that stacking is done along a new axis.
+        - Stacking is same as concatenation, the only difference is that stacking is done along a new axis
         - We can concatenate two 1-D arrays along the second axis which would result in putting them one over the other, ie. stacking.
         - We pass a sequence of arrays that we want to join to the stack() method along with the axis. If axis is not explicitly passed it is taken as 0.
         - e.g. 
@@ -161,7 +161,7 @@ NumPy : For numerical (mathematical & statistical) Computation
             arr = np.stack((arr1, arr2), axis=1)
             print(arr)
 
-            #output : 
+            # output : 
             [[1 4]
             [2 5]
             [3 6]]
@@ -172,7 +172,7 @@ NumPy : For numerical (mathematical & statistical) Computation
             arr = np.hstack((arr1, arr2))
             print(arr)
 
-            #output :
+            # output :
             [1 2 3 4 5 6]
 
     - vstack() : NumPy provides a helper function: vstack()  to stack along columns.
@@ -181,7 +181,7 @@ NumPy : For numerical (mathematical & statistical) Computation
             arr = np.vstack((arr1, arr2))
             print(arr)
 
-            #output :
+            # output :
             [[1 2 3]
             [4 5 6]]
 
@@ -191,7 +191,7 @@ NumPy : For numerical (mathematical & statistical) Computation
             arr = np.dstack((arr1, arr2))
             print(arr)
 
-            #output :
+            # output :
             [[[1 4]
             [2 5]
             [3 6]]]
@@ -202,29 +202,29 @@ NumPy : For numerical (mathematical & statistical) Computation
         newarr = np.array_split(arr, 3)
         print(newarr)
 
-        #output : 
+        # output : 
         [array([1, 2]), array([3, 4]), array([5, 6])]
     
     - If the array has less elements than required, it will adjust from the end accordingly.
         arr = np.array([1, 2, 3, 4, 5, 6])
         newarr = np.array_split(arr, 4)
-        #output : 
+        # output : 
         [array([1, 2]), array([3, 4]), array([5]), array([6])]
     
     - Note: We also have the method split() available but it will not adjust the elements when elements are less in source array for splitting like in example above, array_split() worked properly but split() would fail.
 
     - It can be used to split 2D and more dimensional array
-    - newarr = np.array_split(arr, 3, axis=1)   #Split the 2-D array into three 2-D arrays along rows.
+    - newarr = np.array_split(arr, 3, axis=1)   # Split the 2-D array into three 2-D arrays along rows.
     - An alternate solution is using hsplit() opposite of hstack()
     - Similar alternates to vstack() and dstack() are available as vsplit() and dsplit()
 
 12. where() : to search an array for a certain value, and return the indexes that get a match.
     - e.g. arr = np.array([1, 2, 3, 4, 5, 4, 4])
             x = np.where(arr == 4)      # location of all '4' elements
-            x = np.where(arr%2 == 0)    #indexes where the values are even:
+            x = np.where(arr%2 == 0)    # indexes where the values are even
             print(x)
 
-            #output : 
+            # output : 
             (array([3, 5, 6]),)     
     
     - searchsorted() : 
@@ -252,7 +252,7 @@ NumPy : For numerical (mathematical & statistical) Computation
         newarr = arr[x]
         print(newarr)
 
-        #output : 
+        # output : 
         [41 43]
 
     - You can also create boolean index list using loops or conditions

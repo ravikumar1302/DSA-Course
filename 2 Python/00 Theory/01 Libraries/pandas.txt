@@ -1,5 +1,5 @@
-
 Pandas : Analyzing tabular data. It is used for working with data sets.
+
 
 1. Common functions : 
     Reading CSV files : It reads files in a tabular manner : xyx_df = pd.read_csv('file_name.csv.')
