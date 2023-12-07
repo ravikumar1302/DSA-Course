@@ -1,0 +1,7 @@
+
+- Extension for file is : .tcl
+
+It stands for TCL/TK (Tool Command Language/ToolKit) Pronounced "tickle" or "ticklet,"
+It is an interpreted script language that is used to develop a variety of applications, including GUIs, prototypes and CGI scripts.
+
+- 

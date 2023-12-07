@@ -1,5 +1,6 @@
 
 // Sort_012_Codestudio
+// Sort An Array of 0s, 1s and 2s_Codestudio
 
 #include <bits/stdc++.h>
 void sort012(int *arr, int n)

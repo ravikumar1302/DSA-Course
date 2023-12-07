@@ -3,7 +3,7 @@
 Comment in different Tech Stacks :
 
 1. Programming Languages :
-    a) C++ : 
+    a) C, C++, Verilog : 
         Single line = // text 
         Multiple line = /* text */
     
@@ -12,6 +12,7 @@ Comment in different Tech Stacks :
             Single line = # text 
             Multiple line = """ text """
     d) JS : 
+    e) TCL : # ...text...
 
 2. Front-End
     a) HTML : <!-- text -->
@@ -32,10 +33,11 @@ Comment in different Tech Stacks :
 Case-Sensitivity in different Tech Stacks :
 
 1. Programming Languages :
-    a) C++ : Sensative (written in Lower-case mostly)
+    a) C, C++, Verilog : Sensative (written in Lower-case mostly)
     b) JAVA : Sensative (keyword are in Lowercase only, but - see exception point 2)
     c) Python : Sensative (All are in Lowercase except - True, False and None)
     d) JS : 
+    e) TCL : Case sensitive
 
 2. Front-End
     a) HTML : In-sensitive
