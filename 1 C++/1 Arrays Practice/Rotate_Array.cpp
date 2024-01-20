@@ -43,7 +43,7 @@ void rotate(vector<int> &nums, int k)
     int d = k;
     d = d % n;
 
-    d = n - d; // The only diffrence, switching remaning terms left = switching k terms by right
+    d = n - d; // The only diffrence from above code (which left-shifts) switching remaning terms left = switching k terms by right
 
     // Try this method on Pen-Paper
     reverse(nums.begin() + 0, nums.begin() + d);
