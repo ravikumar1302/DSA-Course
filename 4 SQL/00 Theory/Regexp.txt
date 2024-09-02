@@ -6,7 +6,7 @@ MySQL supports another type of pattern matching operation based on the regular e
     REGEXP is the operator used when performing regular expression pattern matches. RLIKE is the synonym.
     It also supports a number of metacharacters which allow more flexibility and control when performing pattern matching.
     The backslash is used as an escape character. It’s only considered in the pattern match if double backslashes have used.
-    Not case sensitive.
+    Not case sensitive. 
 
 Pattern	What the Pattern matches
     *	Zero or more instances of string preceding it
