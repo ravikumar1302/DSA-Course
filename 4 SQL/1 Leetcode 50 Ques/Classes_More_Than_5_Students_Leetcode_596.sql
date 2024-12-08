@@ -53,6 +53,6 @@ The result format is in the following example.
 
 select class
 from Courses
-                        -- If you write here where count(student) >=5; it will not work
+        -- If you write here where count(student) >=5; it will not work. Because aggregate function don't work with where clause.
 group by class
 having count(student) >=5;      -- having count(distinct(student)) >=5;  but distinct is not needed

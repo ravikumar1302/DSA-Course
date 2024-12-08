@@ -1,6 +1,4 @@
-
 /*
-
 Average_Selling_Price_Leetcode_1252
 
 Table: Prices

@@ -47,3 +47,11 @@ The result format is in the following example.
 Delete a from Person a, Person b
 where a.email=b.email and 
 a.id > b.id;
+
+/* Using a Subquery*/
+
+DELETE FROM Person
+WHERE id NOT IN (
+    SELECT MIN(id)
+    FROM Person
+    GROUP BY emai);
