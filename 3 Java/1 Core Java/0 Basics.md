@@ -13,7 +13,7 @@
     - In Java we get bytecode, JVM converts this to machine code
     - Java is platform-independent but JVM is platform dependent
 
-3. JDK_JRE_JVM_JIT
+3. JDK vs JRE vs JVM vs JIT
    <br><img src="../Images/JDK_JRE_JVM_JIT.png" alt="JDK vs JRE vs JVM vs JIT" width="40%" style="display: block; margin: auto;"><br>
 
 4. JDK (Java Development Kit)
@@ -43,4 +43,7 @@
 
 <br>
 6. Java Execution :
-<br><img src="../Images/Java_execution.png" alt="Java_execution" width="40%" style="display: block; margin: auto;"><br>
+    <br><img src="../Images/Java_execution.png" alt="Java_execution" width="40%" style="display: block; margin: auto;"><br>
+
+7. Working of Java Architecture
+   <br><img src="../Images/Working_of_Java_Architecture.png" alt="Working of Java Architecture" width="40%" style="display: block; margin: auto;"><br>
