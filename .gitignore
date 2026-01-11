@@ -1,3 +1,7 @@
 
+# Ignoring the test CPP/practice cpp files
+*.exe
+Untitled.cpp
+
 # Ignore the foler (5 Extra)
 5 Extra/
