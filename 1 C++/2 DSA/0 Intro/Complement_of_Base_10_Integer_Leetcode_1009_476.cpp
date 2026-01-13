@@ -1,7 +1,7 @@
 
 /*
 Complement_of_Base_10_Integer_Leetcode_1009
-    Number Complement Leetcode_476
+Number Complement Leetcode_476
 
 The complement of an integer is the integer you get when you flip all the 0's to 1's and all the 1's to 0's in its binary representation.
 
@@ -55,9 +55,9 @@ public:
 };
 
 // Method-2 : Easy
-// T.C.: O(N)
-
-// Below code fails for big input like : 2147483647. Above code will work in those cases
+// T.C.: O(log n)
+// S.C.: O(log n) (string storage)
+// This method fails for big input like : 2147483647. Method-1 will work in those cases
 
 class Solution
 {
