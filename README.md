@@ -1,6 +1,6 @@
 # Data Structures and Algorithms
 
-This repository contains implementations of common Data Structures and Algorithms in C++ and Python.
+This repository contains implementations of common Data Structures and Algorithms in C++, Python, Java. It's made over time during my learning phase (which goes on everyday)
 
 ## Introduction
 
