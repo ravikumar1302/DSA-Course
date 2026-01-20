@@ -5,6 +5,8 @@ You are given an integer array 'ARR' of size 'N' and an integer 'S'.
 Your task is to return the list of all pairs of elements such that each sum of elements of each pair equals 'S'.
 */
 
+// Approach-1
+// Time : O(N*N)
 #include <bits/stdc++.h>
 vector<vector<int>> pairSum(vector<int> &arr, int s)
 {
@@ -25,9 +27,9 @@ vector<vector<int>> pairSum(vector<int> &arr, int s)
     sort(ans.begin(), ans.end());
     return ans;
 }
-// Time : O(N*N)
 
 // Approach-2
+// Time : O(N*N)
 #include <bits/stdc++.h>
 vector<vector<int>> pairSum(vector<int> &arr, int s)
 {
@@ -49,4 +51,3 @@ vector<vector<int>> pairSum(vector<int> &arr, int s)
     }
     return ans;
 }
-// Time : O(N*N)
