@@ -1,3 +1,5 @@
+# SDLC, Coupling and Cohesion
+
 ## 1. Principles of Software Engineering
 
 | Principle                     | Full Form                                                                                            | Clear Explanation                                                                                  |
@@ -271,3 +273,47 @@ interface OrderRepository {
 
 OrderService doesn’t care how data is stored.
 ```
+
+## Real example (SDLC + Coupling + Cohesion)
+
+- Scenario : E-commerce: “Place Order” feature
+
+- SDLC (how work flows)
+    - Requirement :
+        - User places order → payment → confirmation
+        - (Edge cases: payment fail, stock issue)
+    - Design (lightweight)
+        - Decide responsibilities before coding.
+    - Develop → Test → Deploy → Monitor
+        - Small changes, safe release.
+    - SDLC = thinking before, during, and after code
+
+- Architecture (simple & realistic)
+  Controller -> OrderService -> Payment, Inventory, Email
+
+- Cohesion (inside components)
+    - OrderService → order flow only
+    - PaymentService → payment logic only
+    - InventoryService → stock only
+    - Each unit has one job.
+    - One class = one responsibility = high cohesion
+
+- Coupling (between components)
+    - Good
+        - OrderService calls services/interfaces
+        - Doesn’t know DB, gateways, SMTP details
+
+    - Bad
+        - OrderService directly talks to DB, payment SDK, email
+        - Low coupling = easy change, safe refactor
+
+- Because of:
+    - High cohesion → logic is in right place
+    - Low coupling → change is local
+    - No rewrite needed.
+
+## One-line memory hook (important)
+
+    - SDLC = when to think
+    - Cohesion = where logic lives
+    - Coupling = how safely it changes
