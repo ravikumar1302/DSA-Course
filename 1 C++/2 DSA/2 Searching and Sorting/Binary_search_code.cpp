@@ -1,7 +1,7 @@
 // T.C.: O(log n)
 // S.C.: O(log n)
 
-// Note: Binary search only works on Sorted data
+// Note: Binary search only works on Sorted data (Ascending or Descending)
 /*
 STL way of Binary Search:
     1. Ascending: binary_search(v.begin(), v.end(), key)
