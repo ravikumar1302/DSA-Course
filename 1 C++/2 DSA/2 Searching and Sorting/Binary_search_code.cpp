@@ -55,6 +55,7 @@ int main()
     return 0;
 }
 
+// Peak element : It is an element that is greater than or equal to its immediate neighbors. It may not be the largest element in array
 int findPeak(int arr[], int n)
 {
 
