@@ -8,33 +8,61 @@ If the index is on the left edge of the array, then the left sum is 0 because th
 Return the leftmost pivot index. If no such index exists, return -1.
 */
 
-
 // Approach-1
 
-class Solution {
+class Solution
+{
 public:
-    int pivotIndex(vector<int>& nums) {
-      if(nums.size() == 0) return -1;
-        
+    int pivotIndex(vector<int> &nums)
+    {
+        if (nums.size() == 0)
+            return -1;
+
         int n = nums.size();
         int totalsum = 0, leftsum = 0;
-        
-        for(int i : nums)
+
+        for (int i : nums)
             totalsum += i;
-        
-        for(int i = 0; i < n; i++) {
-            if(leftsum == (totalsum - nums[i]))
+
+        for (int i = 0; i < n; i++)
+        {
+            if (leftsum == (totalsum - nums[i]))
                 return i;
-            else {
+            else
+            {
                 leftsum += nums[i];
                 totalsum -= nums[i];
-                
             }
         }
-        
+
         return -1;
     }
 };
 
- 
-// Approach-2 : Using Recursion is left
+// Approach-2 : Using Recursion
+
+class Solution
+{
+public:
+    int helper(vector<int> &nums, int index, int leftsum, int totalsum)
+    {
+
+        if (index == nums.size())
+            return -1;
+
+        if (leftsum == totalsum - leftsum - nums[index])
+            return index;
+
+        return helper(nums, index + 1, leftsum + nums[index], totalsum);
+    }
+
+    int pivotIndex(vector<int> &nums)
+    {
+
+        int totalSum = 0;
+        for (int x : nums)
+            totalSum += x;
+
+        return helper(nums, 0, 0, totalSum);
+    }
+};

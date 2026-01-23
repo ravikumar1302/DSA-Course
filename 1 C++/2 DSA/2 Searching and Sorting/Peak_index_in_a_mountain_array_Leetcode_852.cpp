@@ -2,7 +2,6 @@
 Peak_index_in_a_mountain_array_Leetcode_852
 Bitonic Point_GFG
 
-
 Let's call an array arr a mountain if the following properties hold:
 
 1. arr.length >= 3
